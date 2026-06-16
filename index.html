@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start | Team Jea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-ui-dist/jquery-ui.min.css">
+    <link rel="stylesheet" href="./styles.css?v=4">
+</head>
+<body data-page="index.html">
+    <header class="site-header">
+        <div class="header-top">
+            <div class="brand-wrap">
+                <a class="brand brand-standalone" href="./index.html">
+                    <img class="brand-logo" src="./assets/team-jea-logo-transparent.png?v=3" alt="Team Jea">
+                </a>
+                <p class="brand-subtitle">Hundträning med videos, feedback, bokningar, avgifter och träningsöversikt i samma enkla PHP-flöde.</p>
+            </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Öppna meny</span>
+            </button>
+        </div>
+
+        <div id="site-nav" class="top-nav-panel">
+            <nav class="top-nav">
+                                    <a class="nav-link is-active" href="./index.html">Start</a>
+                                    <a class="nav-link" href="./aktuellt.html">Aktuellt</a>
+                                    <a class="nav-link" href="./videos.html">Videos</a>
+                                    <a class="nav-link" href="./ovningar.html">Grunder</a>
+                                    <a class="nav-link" href="./forts.html">Forts</a>
+                                    <a class="nav-link" href="./teori.html">Teori</a>
+                                    <a class="nav-link" href="./klasser.html">Klasser</a>
+                                    <a class="nav-link" href="./betalningar.html">Avgift</a>
+                                    <a class="nav-link" href="./login.html">Login</a>
+                            </nav>
+            <div class="top-nav-actions">
+                <button id="open-upload" class="button button-primary" type="button">Skicka video</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Team Jea</p>
+            <h1>Allt du behöver för träning, videos och uppföljning på ett ställe</h1>
+            <p class="lead">Startsidan samlar aktuellt, nästa klass, videos, hundstatus, betalningar och genvägar till grunder, fortsättning och teori.</p>
+        </section>
+    <section class="dashboard-shell">
+    <div class="home-grid">
+        <article class="panel-card spotlight-card">
+            <p class="eyebrow">Snabbt just nu</p>
+            <h2>Hej Hedvig</h2>
+            <p class="spotlight-text">Du har 1 ny video med feedback, nästa träning är Söndag 22 juni, 10:00 i Vröd och nuvarande saldo är 250 kr.</p>
+            <div class="spotlight-actions">
+                <a class="button button-primary" href="./videos.html">Öppna videos</a>
+                <a class="button button-secondary" href="./klasser.html">Se bokningar</a>
+            </div>
+        </article>
+
+        <article class="panel-card member-card">
+            <p class="eyebrow">Min hund</p>
+            <h2>Wilma</h2>
+            <p class="muted-copy">Wilma behöver lugnare starter i fotgående och kortare pass när tempot går upp.</p>
+            <div class="stats-grid">
+                <article>
+                    <span class="stat-label">Oläst feedback</span>
+                    <strong>1 video</strong>
+                </article>
+                <article>
+                    <span class="stat-label">Nästa pass</span>
+                    <strong>22 juni</strong>
+                </article>
+                <article>
+                    <span class="stat-label">Saldo</span>
+                    <strong>250 kr</strong>
+                </article>
+                <article>
+                    <span class="stat-label">Fokus nu</span>
+                    <strong>Footwork</strong>
+                </article>
+            </div>
+        </article>
+    </div>
+
+    <section class="panel feature-panel">
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">Utvald video</p>
+                <h2>Senaste videon med feedback</h2>
+            </div>
+            <a class="button button-secondary" href="./videos.html">Se hela videobiblioteket</a>
+        </div>
+        <div class="featured-video-layout">
+            <div class="video-stage">
+                <video controls preload="metadata" playsinline>
+                    <source src="https://www.jea.se/videos/uploads/VID-20260613-WA0001(1).mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-detail-card">
+                <p class="status-tag">TillgÃ¤nglig</p>
+                <h3>Video #677</h3>
+                <p class="lead compact">Ã–ppna videon fÃ¶r att lÃ¤sa eller uppdatera mer information.</p>
+                <ul class="check-list">
+                                            <li>Video importerad frÃ¥n live-listan.</li>
+                                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="home-grid home-grid-secondary">
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Aktuellt från Jea</p>
+                    <h2>Senaste inlägg och meddelanden</h2>
+                </div>
+                <a class="button button-secondary" href="./aktuellt.html">Visa alla inlägg</a>
+            </div>
+            <div class="news-stack compact-stack">
+                                    <article class="post-card post-card-inline">
+                        <div class="post-meta">
+                            <span class="status-tag">Jea/Ozzy</span>
+                            <span>09:59</span>
+                        </div>
+                        <h3>Lystring och hyfs inför störningsträning</h3>
+                        <p>Varje störningsträning startar med lystring, koppelhyfs, stanna kvar och visitation. Efteråt markerar du själv momenten gröna eller röda.</p>
+                    </article>
+                                    <article class="post-card post-card-inline">
+                        <div class="post-meta">
+                            <span class="status-tag">Jea/Ozzy</span>
+                            <span>10:01</span>
+                        </div>
+                        <h3>GRUNDER kompletteras med FORTS</h3>
+                        <p>Grunder och fortsättning hör ihop. Börja i grunderna och fortsätt sedan vidare med momenten på nästa nivå när basen sitter.</p>
+                    </article>
+                            </div>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Träning</p>
+                    <h2>Välj område att jobba vidare med</h2>
+                </div>
+            </div>
+            <div class="track-grid">
+                <a class="track-card" href="./ovningar.html">
+                    <span class="level-pill">GRUNDER</span>
+                    <strong>Basmoment och tydliga statusar</strong>
+                    <small>Kontakt, vardagshyfs och verktyg</small>
+                </a>
+                <a class="track-card" href="./forts.html">
+                    <span class="level-pill">FORTS</span>
+                    <strong>Störning, kedjor och nästa nivå</strong>
+                    <small>Footwork, lydnad och rally</small>
+                </a>
+                <a class="track-card" href="./teori.html">
+                    <span class="level-pill">TEORI</span>
+                    <strong>Förklaringar och hundanteckningar</strong>
+                    <small>För dig som vill förstå varför</small>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <div class="home-grid home-grid-secondary">
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Nästa pass</p>
+                    <h2>Klasser och bokningar</h2>
+                </div>
+                <a class="button button-secondary" href="./klasser.html">Öppna kalender</a>
+            </div>
+            <div class="stack-list">
+                                    <article class="stack-item booking-item">
+                        <strong>2026-06-22 kl 10:00</strong>
+                        <span>Vröd</span>
+                        <small>Bokad</small>
+                        <p>Önskemål kan lämnas vid bokning, precis som i liveflödet.</p>
+                    </article>
+                                    <article class="stack-item booking-item">
+                        <strong>2026-06-29 kl 17:00</strong>
+                        <span>Lund</span>
+                        <small>Öppen</small>
+                        <p>Två platser kvar. Visa deltagare direkt i kortet.</p>
+                    </article>
+                                    <article class="stack-item booking-item">
+                        <strong>2026-07-03 kl 10:00</strong>
+                        <span>THIF</span>
+                        <small>Få platser kvar</small>
+                        <p>Detaljvy kan senare kopplas mot TJUTV och BOKAV.</p>
+                    </article>
+                            </div>
+        </section>
+
+        <section class="panel">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Avgift</p>
+                    <h2>Saldo och senaste poster</h2>
+                </div>
+                <a class="button button-secondary" href="./betalningar.html">Se hela avgiftslistan</a>
+            </div>
+            <div class="payment-summary payment-summary-card">
+                <strong>250 kr</strong>
+                <span>Att betala just nu</span>
+            </div>
+            <div class="stack-list">
+                                    <article class="stack-item row-item">
+                        <strong>Månadsavgift</strong>
+                        <span>2026-06-01</span>
+                        <small>100 kr</small>
+                    </article>
+                                    <article class="stack-item row-item">
+                        <strong>Träning Vröd</strong>
+                        <span>2026-06-14</span>
+                        <small>100 kr</small>
+                    </article>
+                                    <article class="stack-item row-item">
+                        <strong>Inbetalning</strong>
+                        <span>2026-06-15</span>
+                        <small>-200 kr</small>
+                    </article>
+                            </div>
+        </section>
+    </div>
+</section>
+        <div id="upload-dialog" title="Skicka video" class="upload-dialog" style="display:none;">
+            <form class="upload-form">
+                <label>
+                    Hund
+                    <select>
+                        <option>Wilma</option>
+                        <option>Lexie</option>
+                        <option>Peach</option>
+                    </select>
+                </label>
+                <label>
+                    Moment
+                    <select>
+                                                    <option>Lystring</option>
+                                                    <option>Footwork position</option>
+                                                    <option>Stanna kvar</option>
+                                                    <option>Handtarget</option>
+                                                    <option>Störningsträning</option>
+                                                    <option>Transporter</option>
+                                            </select>
+                </label>
+                <label>
+                    Kort beskrivning
+                    <textarea rows="4" placeholder="Vad vill du ha feedback på?"></textarea>
+                </label>
+                <div class="consent-inline-box">
+                    <p><strong>Samtycke vid uppladdning</strong></p>
+                    <p>Det här samtycket sparas på videon, så Jea direkt ser om materialet bara får visas på hemsidan eller också får användas i bok och QR-material.</p>
+                    <label class="inline-check"><input type="checkbox" checked> Jag godkänner lagring och visning på hemsidan</label>
+                    <label class="inline-check"><input type="checkbox"> Jag godkänner även användning i bokmaterial och QR-länkar</label>
+                </div>
+                <button class="button button-primary" type="button">Ladda upp video</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist/jquery-ui.min.js"></script>
+    <script src="./app.js?v=3"></script>
+</body>
+</html>
+    

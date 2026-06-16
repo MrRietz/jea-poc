@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teori | Team Jea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-ui-dist/jquery-ui.min.css">
+    <link rel="stylesheet" href="./styles.css?v=4">
+</head>
+<body data-page="teori.html">
+    <header class="site-header">
+        <div class="header-top">
+            <div class="brand-wrap">
+                <a class="brand brand-standalone" href="./index.html">
+                    <img class="brand-logo" src="./assets/team-jea-logo-transparent.png?v=3" alt="Team Jea">
+                </a>
+                <p class="brand-subtitle">Hundträning med videos, feedback, bokningar, avgifter och träningsöversikt i samma enkla PHP-flöde.</p>
+            </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Öppna meny</span>
+            </button>
+        </div>
+
+        <div id="site-nav" class="top-nav-panel">
+            <nav class="top-nav">
+                                    <a class="nav-link" href="./index.html">Start</a>
+                                    <a class="nav-link" href="./aktuellt.html">Aktuellt</a>
+                                    <a class="nav-link" href="./videos.html">Videos</a>
+                                    <a class="nav-link" href="./ovningar.html">Grunder</a>
+                                    <a class="nav-link" href="./forts.html">Forts</a>
+                                    <a class="nav-link is-active" href="./teori.html">Teori</a>
+                                    <a class="nav-link" href="./klasser.html">Klasser</a>
+                                    <a class="nav-link" href="./betalningar.html">Avgift</a>
+                                    <a class="nav-link" href="./login.html">Login</a>
+                            </nav>
+            <div class="top-nav-actions">
+                <button id="open-upload" class="button button-primary" type="button">Skicka video</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Teori</p>
+            <h1>Förstå träningen bättre mellan passen</h1>
+            <p class="lead">Här ligger teoripass och anteckningar som hjälper dig förstå varför övningarna ser ut som de gör.</p>
+        </section>
+    <section class="panel two-column">
+    <article class="panel-card">
+        <p class="eyebrow">Teoripass</p>
+        <div class="stack-list">
+                            <article class="stack-item">
+                    <strong>Belöningstiming</strong>
+                    <p>När markeringen ska komma och hur du undviker att hunden blir sned i position.</p>
+                </article>
+                            <article class="stack-item">
+                    <strong>Korta pass</strong>
+                    <p>Fyra riktigt bra repetitioner ger ofta bättre utveckling än tio halvdana.</p>
+                </article>
+                            <article class="stack-item">
+                    <strong>Så läser du färgerna i matrisen</strong>
+                    <p>Vit betyder nytt eller ej startat, blå pågående, grön klart och röd behöver backas eller göras om.</p>
+                </article>
+                    </div>
+    </article>
+
+    <article class="panel-card">
+        <p class="eyebrow">Hundanteckning</p>
+        <h2>Hedvig och Wilma</h2>
+        <p class="muted-copy">Samla sådant du vill komma ihåg till nästa pass.</p>
+        <div class="note-box">
+            <p>Wilma behöver lugnare starter i fotgående och kortare pass när tempot går upp.</p>
+        </div>
+        <button class="button button-primary" type="button">Spara träningsanteckning</button>
+    </article>
+</section>
+        <div id="upload-dialog" title="Skicka video" class="upload-dialog" style="display:none;">
+            <form class="upload-form">
+                <label>
+                    Hund
+                    <select>
+                        <option>Wilma</option>
+                        <option>Lexie</option>
+                        <option>Peach</option>
+                    </select>
+                </label>
+                <label>
+                    Moment
+                    <select>
+                                                    <option>Lystring</option>
+                                                    <option>Footwork position</option>
+                                                    <option>Stanna kvar</option>
+                                                    <option>Handtarget</option>
+                                                    <option>Störningsträning</option>
+                                                    <option>Transporter</option>
+                                            </select>
+                </label>
+                <label>
+                    Kort beskrivning
+                    <textarea rows="4" placeholder="Vad vill du ha feedback på?"></textarea>
+                </label>
+                <div class="consent-inline-box">
+                    <p><strong>Samtycke vid uppladdning</strong></p>
+                    <p>Det här samtycket sparas på videon, så Jea direkt ser om materialet bara får visas på hemsidan eller också får användas i bok och QR-material.</p>
+                    <label class="inline-check"><input type="checkbox" checked> Jag godkänner lagring och visning på hemsidan</label>
+                    <label class="inline-check"><input type="checkbox"> Jag godkänner även användning i bokmaterial och QR-länkar</label>
+                </div>
+                <button class="button button-primary" type="button">Ladda upp video</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist/jquery-ui.min.js"></script>
+    <script src="./app.js?v=3"></script>
+</body>
+</html>
+    

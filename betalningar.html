@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avgift | Team Jea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-ui-dist/jquery-ui.min.css">
+    <link rel="stylesheet" href="./styles.css?v=4">
+</head>
+<body data-page="betalningar.html">
+    <header class="site-header">
+        <div class="header-top">
+            <div class="brand-wrap">
+                <a class="brand brand-standalone" href="./index.html">
+                    <img class="brand-logo" src="./assets/team-jea-logo-transparent.png?v=3" alt="Team Jea">
+                </a>
+                <p class="brand-subtitle">Hundträning med videos, feedback, bokningar, avgifter och träningsöversikt i samma enkla PHP-flöde.</p>
+            </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Öppna meny</span>
+            </button>
+        </div>
+
+        <div id="site-nav" class="top-nav-panel">
+            <nav class="top-nav">
+                                    <a class="nav-link" href="./index.html">Start</a>
+                                    <a class="nav-link" href="./aktuellt.html">Aktuellt</a>
+                                    <a class="nav-link" href="./videos.html">Videos</a>
+                                    <a class="nav-link" href="./ovningar.html">Grunder</a>
+                                    <a class="nav-link" href="./forts.html">Forts</a>
+                                    <a class="nav-link" href="./teori.html">Teori</a>
+                                    <a class="nav-link" href="./klasser.html">Klasser</a>
+                                    <a class="nav-link is-active" href="./betalningar.html">Avgift</a>
+                                    <a class="nav-link" href="./login.html">Login</a>
+                            </nav>
+            <div class="top-nav-actions">
+                <button id="open-upload" class="button button-primary" type="button">Skicka video</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Avgift</p>
+            <h1>Saldo, poster och inbetalningar samlade på en sida</h1>
+            <p class="lead">Här ser du vad som är betalt, vad som återstår och vilka poster som ligger bakom saldot.</p>
+        </section>
+    <section class="panel two-column">
+    <div class="panel-card">
+        <p class="eyebrow">Nuvarande saldo</p>
+        <div class="payment-summary">
+            <strong>250 kr</strong>
+            <span>Att betala just nu</span>
+        </div>
+        <div class="payment-form">
+            <label>
+                Registrera inbetalning
+                <input type="text" value="250">
+            </label>
+            <button class="button button-primary" type="button">Nolla efter betalning</button>
+        </div>
+        <p class="muted-copy">När en betalning kommit in kan Jea registrera den och uppdatera saldot direkt.</p>
+    </div>
+
+    <div class="panel-card">
+        <table class="payment-table">
+            <thead>
+                <tr>
+                    <th>Datum</th>
+                    <th>Post</th>
+                    <th>Belopp</th>
+                </tr>
+            </thead>
+            <tbody>
+                                    <tr>
+                        <td>2026-06-01</td>
+                        <td>Månadsavgift</td>
+                        <td>100 kr</td>
+                    </tr>
+                                    <tr>
+                        <td>2026-06-14</td>
+                        <td>Träning Vröd</td>
+                        <td>100 kr</td>
+                    </tr>
+                                    <tr>
+                        <td>2026-06-15</td>
+                        <td>Inbetalning</td>
+                        <td>-200 kr</td>
+                    </tr>
+                                    <tr>
+                        <td>Idag</td>
+                        <td>Utestående</td>
+                        <td>250 kr</td>
+                    </tr>
+                            </tbody>
+        </table>
+    </div>
+</section>
+        <div id="upload-dialog" title="Skicka video" class="upload-dialog" style="display:none;">
+            <form class="upload-form">
+                <label>
+                    Hund
+                    <select>
+                        <option>Wilma</option>
+                        <option>Lexie</option>
+                        <option>Peach</option>
+                    </select>
+                </label>
+                <label>
+                    Moment
+                    <select>
+                                                    <option>Lystring</option>
+                                                    <option>Footwork position</option>
+                                                    <option>Stanna kvar</option>
+                                                    <option>Handtarget</option>
+                                                    <option>Störningsträning</option>
+                                                    <option>Transporter</option>
+                                            </select>
+                </label>
+                <label>
+                    Kort beskrivning
+                    <textarea rows="4" placeholder="Vad vill du ha feedback på?"></textarea>
+                </label>
+                <div class="consent-inline-box">
+                    <p><strong>Samtycke vid uppladdning</strong></p>
+                    <p>Det här samtycket sparas på videon, så Jea direkt ser om materialet bara får visas på hemsidan eller också får användas i bok och QR-material.</p>
+                    <label class="inline-check"><input type="checkbox" checked> Jag godkänner lagring och visning på hemsidan</label>
+                    <label class="inline-check"><input type="checkbox"> Jag godkänner även användning i bokmaterial och QR-länkar</label>
+                </div>
+                <button class="button button-primary" type="button">Ladda upp video</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist/jquery-ui.min.js"></script>
+    <script src="./app.js?v=3"></script>
+</body>
+</html>
+    

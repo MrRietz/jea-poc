@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Team Jea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-ui-dist/jquery-ui.min.css">
+    <link rel="stylesheet" href="./styles.css?v=4">
+</head>
+<body data-page="login.html">
+    <header class="site-header">
+        <div class="header-top">
+            <div class="brand-wrap">
+                <a class="brand brand-standalone" href="./index.html">
+                    <img class="brand-logo" src="./assets/team-jea-logo-transparent.png?v=3" alt="Team Jea">
+                </a>
+                <p class="brand-subtitle">Hundträning med videos, feedback, bokningar, avgifter och träningsöversikt i samma enkla PHP-flöde.</p>
+            </div>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Öppna meny</span>
+            </button>
+        </div>
+
+        <div id="site-nav" class="top-nav-panel">
+            <nav class="top-nav">
+                                    <a class="nav-link" href="./index.html">Start</a>
+                                    <a class="nav-link" href="./aktuellt.html">Aktuellt</a>
+                                    <a class="nav-link" href="./videos.html">Videos</a>
+                                    <a class="nav-link" href="./ovningar.html">Grunder</a>
+                                    <a class="nav-link" href="./forts.html">Forts</a>
+                                    <a class="nav-link" href="./teori.html">Teori</a>
+                                    <a class="nav-link" href="./klasser.html">Klasser</a>
+                                    <a class="nav-link" href="./betalningar.html">Avgift</a>
+                                    <a class="nav-link is-active" href="./login.html">Login</a>
+                            </nav>
+            <div class="top-nav-actions">
+                <button id="open-upload" class="button button-primary" type="button">Skicka video</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Login</p>
+            <h1>Logga in som medlem eller Jea</h1>
+            <p class="lead">Välj rätt inloggning för att komma till dina videos, bokningar, betalningar och träningsanteckningar.</p>
+        </section>
+    <section class="panel two-column">
+    <div class="panel-card">
+        <p class="eyebrow">Medlemsinloggning</p>
+        <form class="login-form">
+            <label>
+                E-post eller användarnamn
+                <input type="text" value="hedvig@example.com">
+            </label>
+            <label>
+                Lösenord
+                <input type="password" value="hedvig123">
+            </label>
+            <div class="spotlight-actions">
+                <button class="button button-primary" type="button">Logga in som medlem</button>
+                <button class="button button-secondary" type="button">Logga in som Jea</button>
+            </div>
+        </form>
+    </div>
+    <div class="panel-card">
+        <p class="eyebrow">Efter inloggning</p>
+        <ul class="check-list">
+            <li>Medlem ser egna hundar, videos, feedback, bokningar och saldo.</li>
+            <li>Jea ser videokö, betalningar, inlägg och träningsinnehåll.</li>
+            <li>Allt är samlat i samma meny men med olika rättigheter.</li>
+        </ul>
+    </div>
+</section>
+        <div id="upload-dialog" title="Skicka video" class="upload-dialog" style="display:none;">
+            <form class="upload-form">
+                <label>
+                    Hund
+                    <select>
+                        <option>Wilma</option>
+                        <option>Lexie</option>
+                        <option>Peach</option>
+                    </select>
+                </label>
+                <label>
+                    Moment
+                    <select>
+                                                    <option>Lystring</option>
+                                                    <option>Footwork position</option>
+                                                    <option>Stanna kvar</option>
+                                                    <option>Handtarget</option>
+                                                    <option>Störningsträning</option>
+                                                    <option>Transporter</option>
+                                            </select>
+                </label>
+                <label>
+                    Kort beskrivning
+                    <textarea rows="4" placeholder="Vad vill du ha feedback på?"></textarea>
+                </label>
+                <div class="consent-inline-box">
+                    <p><strong>Samtycke vid uppladdning</strong></p>
+                    <p>Det här samtycket sparas på videon, så Jea direkt ser om materialet bara får visas på hemsidan eller också får användas i bok och QR-material.</p>
+                    <label class="inline-check"><input type="checkbox" checked> Jag godkänner lagring och visning på hemsidan</label>
+                    <label class="inline-check"><input type="checkbox"> Jag godkänner även användning i bokmaterial och QR-länkar</label>
+                </div>
+                <button class="button button-primary" type="button">Ladda upp video</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-dist/jquery-ui.min.js"></script>
+    <script src="./app.js?v=3"></script>
+</body>
+</html>
+    
