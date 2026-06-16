@@ -355,8 +355,8 @@ Det här är den praktiska kartan över hur MVP:n kan kopplas mot nuvarande back
   - sök bör finnas på hund, medlem, övning, moment och feedback
   - årsfilter bör finnas för att undvika jättelånga listor
   - samtycke för hemsida och bok/QR bör sparas på själva videon
-  - i den lokala PHP-prototypen läses livevideos just nu via cachefilen `poc/jea-redesign/cache/videos-live.json`
-  - den cachen uppdateras med `poc/jea-redesign/scripts/refresh-live-videos.ps1`
+  - i den uppladdade PHP-versionen läses livevideos just nu via cachefilen `jea-redesign/cache/videos-live.json`
+  - den cachen uppdateras med `jea-redesign/scripts/refresh-live-videos.ps1`
 
 ### Grunder
 
@@ -427,7 +427,7 @@ Det här är den praktiska kartan över hur MVP:n kan kopplas mot nuvarande back
 
 ### Statisk HTML-Demo
 
-- mapp: `poc/jea-redesign-html/`
+- mapp: repo-roten i `https://github.com/MrRietz/jea-poc/tree/main`
 - syfte:
   - demo för genomgång
   - enkel publicering på GitHub / GitHub Pages
@@ -436,7 +436,7 @@ Det här är den praktiska kartan över hur MVP:n kan kopplas mot nuvarande back
   - inga liveuppdateringar
   - ingen direktkoppling till livevideos
 - kommentar:
-  - HTML-versionen bör hållas visuellt synkad med PHP-MVP:n
+  - HTML-filerna i roten bör hållas visuellt synkade med PHP-MVP:n i `jea-redesign/`
   - PHP-versionen är den riktiga integrationsvägen
 
 ## 13. Teknisk Integrationsspec
@@ -625,6 +625,32 @@ Det här måste därför bevaras:
 - HTML-versionen är bara demo
 - nästa steg är en faktisk inkopplingsfas sida för sida
 
+### 13.6 Filstruktur I Den Uppladdade GitHub-Versionen
+
+I den publicerade versionen på GitHub ligger filerna så här:
+
+- HTML-sidor i repo-roten:
+  - `index.html`
+  - `aktuellt.html`
+  - `videos.html`
+  - `ovningar.html`
+  - `forts.html`
+  - `teori.html`
+  - `klasser.html`
+  - `betalningar.html`
+  - `login.html`
+- gemensamma statiska filer i repo-roten:
+  - `app.js`
+  - `styles.css`
+- bilder och logga i:
+  - `assets/`
+- dokumentation i:
+  - `docs/`
+- PHP-versionen i:
+  - `jea-redesign/`
+
+Det betyder att hänvisningar i detta redesignförslag ska tolkas enligt denna publicerade struktur när man tittar på GitHub-versionen.
+
 ## 14. Hostingbedömning
 
 Det observerade teknikupplägget ser enkelt och pragmatiskt ut:
@@ -640,8 +666,8 @@ Det betyder att en praktisk modernisering ovanpå nuvarande driftmodell är real
 
 Arbetet innehåller nu:
 
-- en PHP-MVP i `poc/jea-redesign/`
-- en statisk HTML-demo i `poc/jea-redesign-html/`
+- en PHP-MVP i `jea-redesign/` i den uppladdade GitHub-versionen
+- en statisk HTML-demo i repo-roten i den uppladdade GitHub-versionen
 - expanderbara övningsbeskrivningar baserade på live-texter
 - visning av samtycke på videonivå
 - sök på `Videos`, `Grunder` och `Forts`
