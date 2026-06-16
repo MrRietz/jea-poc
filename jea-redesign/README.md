@@ -55,6 +55,10 @@ Det scriptet:
 - sparar cache i `poc/jea-redesign/cache/videos-live.json`
 - kör en teckenkodningsfix efteråt
 
+## HTML-POC
+
+Den statiska HTML-versionen ligger i repo-roten.
+
 ## Vanliga problem
 
 `php : The term 'php' is not recognized`
